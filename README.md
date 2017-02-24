@@ -22,4 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-# blog
+Prosta aplikacja do tworzenia tematów i komentarzy.

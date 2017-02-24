@@ -1,3 +1,5 @@
+# Prosta aplikacja do tworzenia tematów i komentarzy.
+
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,4 +24,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-Prosta aplikacja do tworzenia tematów i komentarzy.

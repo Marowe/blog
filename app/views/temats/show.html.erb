@@ -1,0 +1,10 @@
+<div class="col-sm-11 col-xs-12 blog-content">
+  <h1 class="text-center"><%= @temat.title %></h1>
+  <h3 class="text-center"><%= @temat.created_at.strftime('%b %d, %Y') %></h3>
+  <h4 class="text-center"><%= @temat.description %></h4>
+
+<%= render partial: "comments/comments", locals: {commentable: @temat} %>
+<%= render partial: "comments/form", locals: {commentable: @temat} %>
+
+<br><br><%= link_to 'Edit', edit_temat_path(@temat), class: "btn btn-info" %>
+<%= link_to 'Back', spis_path, class: "btn btn-warning" %>

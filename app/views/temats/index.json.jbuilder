@@ -1,0 +1,1 @@
+json.array! @temats, partial: 'temats/temat', as: :temat

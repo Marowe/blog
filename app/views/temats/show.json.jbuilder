@@ -1,0 +1,1 @@
+json.partial! "temats/temat", temat: @temat

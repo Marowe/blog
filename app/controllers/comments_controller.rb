@@ -1,6 +1,4 @@
 class CommentsController < ApplicationController
-  before_action :authenticate_user!
-
   def create
     @comment = @commentable.comments.new comment_params
     @comment.user = current_user
@@ -15,16 +13,6 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new
   end
-
-  def destroy
-    @comment.destroy
-    respond_to do |format|
-      format.html { redirect_to spis_url, notice: 'Comment was successfully destroyed.' }
-      format.json { head :no_content }
-    end
-  end
-
-
   private
 
     def comment_params

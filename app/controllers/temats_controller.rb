@@ -1,6 +1,5 @@
 class TematsController < ApplicationController
   before_action :set_temat, only: [:show, :edit, :update, :destroy]
-
   # GET /temats
   # GET /temats.json
   def index
@@ -52,7 +51,6 @@ class TematsController < ApplicationController
       end
     end
   end
-
   # DELETE /temats/1
   # DELETE /temats/1.json
   def destroy
